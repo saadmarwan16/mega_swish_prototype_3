@@ -26,7 +26,7 @@ SECRET_KEY = '406vbly&=5a+a$n_aot&-6+yrz0s%(r5yxa2!c$72&ddxeru##'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['megaswish.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
