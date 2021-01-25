@@ -51,6 +51,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 ROOT_URLCONF = 'megaswish.urls'
@@ -79,8 +80,15 @@ WSGI_APPLICATION = 'megaswish.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'decefvutquslgi',
+        'HOST': 'ec2-18-213-176-229.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'ioeyfojptctslo',
+        'PASSWORD': 'b235cdee4c2a9d50cebfbccf9c81476e45dbdae3dcaea60b23f78b2f47332506'
     }
 }
 
