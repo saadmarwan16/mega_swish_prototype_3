@@ -1,0 +1,51 @@
+.header-cta {
+    background-color: #303030;
+    color: white;
+}
+
+.header-cta-row {
+    padding-top: 15px;
+}
+
+.header-cta-col {
+    padding-right: 0;
+}
+
+.header-cta-icon-container {
+    display: inline-block;
+    position: relative;
+    bottom: .75em;
+}
+
+.header-cta-icon {
+    padding: .5em;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: .75em;
+    line-height: 26px !important;
+    color: #82B7DF;
+}
+
+.header-cta-icon:hover {
+    color: #007bff;
+    background-color: white;
+}
+
+.header-cta-text-container {
+    display: inline-block;
+}
+
+.header-cta-text {
+    display: block;
+}
+
+.header-logo-row {
+    padding: 1em;
+    border-radius: 0;
+    background-color: palegoldenrod;
+    margin-bottom: 0;
+}

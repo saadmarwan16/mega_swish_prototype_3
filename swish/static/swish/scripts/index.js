@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Vanilla JavaScipt
-import './js/main.js';
+// import './js/main.js';
 
-import '../styles/index.css';
-import '../styles/another.css';
+import '../styles/header.css';
+import '../styles/carousel.css';
 
 ReactDOM.render(
     <React.StrictMode>

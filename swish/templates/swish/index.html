@@ -6,16 +6,129 @@
     <head>
         <title>Mega Swish</title>
 
-        <link rel="stylesheet" href="{% static 'swish/styles/index.css' %}">
-        <link rel="stylesheet" href="{% static 'swish/styles/another.css' %}">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <!-- <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all"> -->
+
+        <link rel="icon" href="{% static 'swish/images/favicon.ico' %}">
+
+        <link rel="stylesheet" href="{% static 'swish/styles/fontawesome-all.min.css' %}">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- <link rel="stylesheet" href="{% static 'swish/styles/header.css' %}"> -->
+        <!-- <link rel="stylesheet" href="{% static 'swish/styles/carousel.css' %}"> -->
     </head>
 
     <body>
-        <div id="root"></div>
-        <h1 id="megaswish">Hello, world! This is Mega Swish.</h1>
-        <h1 id="megaswish1">Hello, again!</h1>
+        <div class="container-fluid header-cta">
+            <div class="row header-cta-row">
+                <div class="col-lg-3 col-md-4 col-12 header-cta-col">
+                    <div class="header-cta-icon-container">
+                        <a href="#"><i class="fas fa-phone header-cta-icon"></i></a>
+                    </div>
+
+                    <div class="header-cta-text-container">
+                        <strong class="header-cta-text">Give us a call:</strong> +(233) 553410106
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 header-cta-col">
+                    <div class="header-cta-icon-container">
+                        <a href="#"><i class="fas fa-envelope header-cta-icon"></i></a>
+                    </div>
+                    
+                    <div class="header-cta-text-container">
+                        <strong class="header-cta-text">Send us a mail:</strong> mrghana30@gmail.com
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 header-cta-col">
+                    <div class="header-cta-icon-container">
+                        <a href="#"><i class="fas fa-clock header-cta-icon"></i></a>
+                    </div>
+                    
+                    <div class="header-cta-text-container">
+                        <strong class="header-cta-text"> Mon. - Sat.:</strong> 12:00am - 11:59pm
+                    </div>
+                </div>
+            </div>
+
+            <div class="row jumbotron header-logo-row">
+                <a class="navbar-brand" href="#">
+                    <img src="{% static 'swish/images/android-chrome-192x192.png' %}" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                    MegaSwish
+                </a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Top Categories</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+          
+        <div id="megaswish-logo" class="carousel slide" data-ride="carousel" loading="lazy">
+            <ul class="carousel-indicators">
+                <li data-target="#megaswish-logo" data-slide-to="0" class="active"></li>
+                <li data-target="#megaswish-logo" data-slide-to="1"></li>
+                <li data-target="#megaswish-logo" data-slide-to="2"></li>
+            </ul>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'swish/images/windows-computer.jpg' %}" alt="Bad">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'swish/images/right-color.jpg' %}" alt="Right Color">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'swish/images/perfect.png' %}" alt="Perfect">
+                </div>
+            </div>
+            
+            <a class="carousel-control-prev" href="#megaswish-logo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#megaswish-logo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
 
         <script src="{% static 'swish/dist/app.bundle.js' %}"></script>
-        <script src="{% static 'swish/scripts/js/main.js' %}"></script>
+        <!-- <script src="{% static 'swish/scripts/js/main.js' %}"></script> -->
     </body>
 </html>
